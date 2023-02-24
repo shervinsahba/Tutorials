@@ -10,4 +10,4 @@ def plot_simple_1d(x,y):
     ax.plot(x,y)
     ax.set_xlim(x[0],x[-1])
 
-generate_video(lambda t: plot_simple_1d(x, data[t,:]), 100, 'figs')
+generate_video(lambda t: plot_simple_1d(x, data[t,:]), 50)
