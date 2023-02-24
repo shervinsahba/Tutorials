@@ -1,3 +1,5 @@
+# generate_video requires ffmpeg
+
 import os
 import glob
 import subprocess
