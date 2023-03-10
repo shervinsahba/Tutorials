@@ -52,6 +52,8 @@ def generate_video(plot_function,t_max,t_start=0,directory='figs',filename='vide
     if t_max - t_start >= 1e5:
         raise ValueError(f"Do you really want to save {t_max - t_start} images? Try smaller.")
 
+    print(f"Generating video with {t_max - t_start} frames")
+
     Path(directory).mkdir(exist_ok=True)  # create figure dir if doesn't exist
     image_name_prefix = str(plot_function.__hash__())   # tmp identifier so you don't clobber other files
     
